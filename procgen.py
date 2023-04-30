@@ -32,7 +32,6 @@ class RectangularRoom:
         """Return the inner area of this room as a 2d array index"""
         return slice(self.x1 + 1, self.x2), slice(self.y1 + 1, self.y2)
 
-
     def intersects(self, other: RectangularRoom) -> bool:
         """Return True if this room overlaps with another RectangularRoom."""
         return(
